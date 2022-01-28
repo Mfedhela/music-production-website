@@ -1,0 +1,81 @@
+@media screen and (min-width: 768px) {
+  body {
+    height: 99vh;
+    min-height: 35em;
+    /* max-height: 43em;  */
+    padding: 1rem 0;
+  }
+  main {
+    border-radius: 1rem;
+  }
+  .mobile {
+    display: none;
+  }
+  .side_left,
+  .side_right {
+    position: sticky;
+    top: 0;
+  }
+  .center {
+    overflow-y: scroll;
+    height: 100%;
+    margin-block: auto;
+  }
+  .center .intro {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+  main {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .intro {
+    height: 40em;
+  }
+  .header {
+    margin-bottom: 2rem;
+  }
+  .side_right {
+    position: absolute;
+    transform: translateX(-120%);
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    z-index: 9;
+    height: 100vh;
+    transition: 0.2s all;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-top-left-radius: 1rem;
+  }
+  #closeBtn {
+    position: absolute;
+    top: 1%;
+    left: 7.5%;
+  }
+  .btn-success {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 3rem;
+    z-index: 99;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mic-pic {
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+  .sample-text {
+    width: 100%;
+  }
+  .card-two,
+  .card-three {
+    margin: 5rem 0;
+  }
+}
